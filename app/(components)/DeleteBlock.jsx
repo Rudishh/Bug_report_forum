@@ -21,6 +21,7 @@ const DeleteBlock = ({ id }) => {
      e.preventDefault();
     if (formData.name !== AdminPsw) {
       alert(`Invalid password - ADMIN ACCESS DENIED`)
+      setShowForm(false);
       router.refresh()
     } 
     else {
@@ -39,8 +40,8 @@ const DeleteBlock = ({ id }) => {
       method: "DELETE"
     });
     if (res.ok) {
-      router.refresh();
       setShowForm(false);  // Close the form after successful delete
+      router.refresh();
     }
   };
 

@@ -26,7 +26,7 @@ async function queryExecute(query) {
 
 // Call the function to fetch and display results
 async function loadData() {
- await queryExecute(`CREATE TABLE IF NOT EXISTS Ticket_web (Id BIGINT(200),Title VARCHAR(250), Description VARCHAR(250), Project VARCHAR(250), Priority INT(50), Severity INT(50), Viewport VARCHAR(250), Active BOOLEAN, Date DATE DEFAULT CURRENT_DATE)`)
+ await queryExecute(`CREATE TABLE IF NOT EXISTS Ticket_web (Id BIGINT(200),Title VARCHAR(250), Description VARCHAR(250), Project VARCHAR(250), Priority INT(50), Severity INT(50), Viewport VARCHAR(250), Active BOOLEAN, Date DATE DEFAULT (CURRENT_DATE))`)
  console.log(`[MYSQL] Connected`)
 }
 loadData()

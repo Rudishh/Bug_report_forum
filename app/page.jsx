@@ -1,17 +1,13 @@
 import TicketCard from "./(components)/TicketCard"
 
 const getTickets = async () => {
-  try {
+
     const res = await fetch("http://localhost:3000/api/Tickets", {
       cache: "no-store"
     })
-
     return res.json();
-  } catch (error) {
-
-    console.log('failed to get ticket', error)
-  }
 }
+
 
 const Dashboard = async () => {
 

@@ -1,4 +1,4 @@
-import queryExecute from "/JS project/Bug_report_forum/app/(mysql)/mysql";
+import queryExecute from "../../(mysql)/mysql"
 import { NextResponse } from "next/server";
 
 

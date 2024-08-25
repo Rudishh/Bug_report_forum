@@ -13,9 +13,9 @@ export const metadata = {
   title: "Rudi bug report forum",
   description: "Made by @rudish",
   icons: {
-    icon: "/bug_report.png",
-    apple: "/bug_report.png",
-    shortcut: "/bug_report.png",
+    icon: ["/bug_report.png"],
+    apple: ["/bug_report.png"],
+    shortcut: ["/bug_report.png"],
   },
   image: "/bug_report_preview.png",
 };
